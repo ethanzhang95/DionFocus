@@ -1,0 +1,391 @@
+@font-face {
+  src: url(fonts/Ubuntu-Regular.ttf);
+  font-family: ubuntu;
+}
+@font-face {
+  src: url(fonts/Caveat-Regular.ttf);
+  font-family: caveat;
+}
+@font-face {
+  src: url(fonts/RobotoMono-Regular.ttf);
+  font-family: roboto;
+}
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*Home*/
+#intro1 {
+  color: black;
+  font-size: 70px;
+  margin-top: 7%;
+  font-family: caveat;
+  font-style: italic;
+  text-align: center;
+  font-weight: normal;
+}
+
+#intro2 {
+  color: #276955;
+  font-size: 200px;
+  font-family: ubuntu;
+  font-style: bold;
+  text-align: center;
+}
+
+#intro3 {
+  color: black;
+  font-size: 60px;
+  font-family: caveat;
+  font-style: oblique;
+  font-weight: normal;
+  text-align: center;
+}
+.intro {
+  background-image: url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.midsection {
+  background-color:  #43947b;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+}
+
+#midhead {
+  font-size: 60px;
+  color: white;
+  margin-left: 10%;
+  margin-top: 3%;
+  font-family: caveat;
+}
+
+#midp {
+  font-size: 22px;
+  color: white;
+  margin-left: 12%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-right: 12%;
+  background: #43947b;
+  font-family: roboto;
+}
+.ender {
+  background-color: #276955;
+  color: white;
+}
+
+#creator {
+  text-align: center;
+  font-family: ubuntu;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  margin-top: 20px;
+  align-self: center;
+  font-family: ubuntu;
+  font-size: 26px;
+  background-color: #276955;
+  position:relative;
+  transform: translate(-50%, 0%);
+  left:50%;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid #276955;
+  margin-bottom: 7%;
+}
+
+.button1:hover {
+  background-color: #43947b;
+  color: white;
+}
+
+.button2 {
+  margin-top: 20px;
+  align-self: center;
+  font-family: ubuntu;
+  font-size: 26px;
+  background-color: #43947b;
+  position:relative;
+  transform: translate(-50%, 0%);
+  left:50%;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid #43947b;
+  margin-bottom: 30px;
+}
+
+.button2:hover {
+  background-color: white;
+  color: black;
+}
+
+/*About Us*/
+.aboutbody {
+  background-color: #276955;
+}
+#about-us {
+  color: white;
+  font-size: 100px;
+  font-family: caveat;
+  font-style: bold;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#aboutp {
+  font-size: 22px;
+  color: white;
+  margin-left: 12%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-right: 12%;
+  font-family: roboto;
+}
+
+.button3 {
+  margin-top: 20px;
+  align-self: center;
+  font-family: ubuntu;
+  font-size: 26px;
+  background-color: #43947b;
+  position:relative;
+  transform: translate(-50%, 0%);
+  left:50%;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid #276955;
+  margin-bottom: 30px;
+}
+
+.button3:hover {
+  background-color: white;
+  color: #276955;
+}
+
+/*Session*/
+#main{
+  position: relative;
+  bottom: auto;
+}
+.main#blur.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 100px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+#popup.active{
+  top: 50%;
+  position: fixed;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  overflow: visible;
+}
+
+#scatter-gl-container {
+  border: solid 1px black;
+  position: relative;
+}
+
+#scatter-gl-container canvas {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+.btn-box{
+  margin-top: 3%;
+  font-family: roboto;
+}
+
+div button {
+  width: 110px;
+  height: 35px;
+  margin: 0 10px;
+  background: #276955;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.skipallbtn{
+  width: 110px;
+  height: 35px;
+  vertical-align: top;
+  margin: 0 10px;
+}
+
+.step{
+  width:600px;
+  position: absolute;
+  left:40px;
+  transition: 0.5s;
+  font-family: roboto;
+
+}
+#step1{
+  visibility: visible;
+  font-family: roboto;
+}
+#step2{
+  left: 400px;
+  visibility: hidden;
+  font-family: roboto;
+}
+
+#step3{
+  left: 400px;
+  visibility: hidden;
+  font-family: roboto;
+}
+
+#myTextarea{
+  width: 640px;
+  height: 100px;
+  font-size: 60px;
+  resize: none;
+  font-family: roboto;
+  text-transform: capitalize;
+}
+
+.timer  {
+  background-color: white;
+  margin:auto;
+  padding: 10px;
+  font-size: 70px;
+  font-family: roboto;
+}
+
+.body{
+  background-color: #43947b;
+}

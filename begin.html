@@ -1,0 +1,111 @@
+<DOCTYPE! html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <script src="AI_files/three.js"></script>
+    <script src="AI_files/scatter-gl.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    <title>Session</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="body" onload="toggle()">
+    <script>startStop()
+
+    </script>
+    <div class="popup" id="popup">
+
+      <div class="step" id="step1">
+
+        <h2>Let's Get Started</h2>
+        <br>
+        <p>Give Dion access to your camera and microphone by clicking 'allow' in at the top of the page. We need your microphone and camera to help track your environment.</p>
+        <div class="btn-box">
+          <button type="button" id="next1">Next</button>
+        </div>
+      </div>
+
+      <div class="step" id="step2">
+        <h2>Privacy</h2>
+        <br>
+        <p>Dion only accesses the camera and microphone during your session, but does not store any of the media. We only use live data, nothing is recorded.</p>
+        <div class="btn-box">
+          <button type="button" id="next2">Next</button>
+        </div>
+      </div>
+
+      <div class="step" id="step3">
+        <h2>Things To Consider</h2>
+        <br>
+        <p>Leaving the room, looking away for long periods of time, or any other random movements, may affect your score.</p>
+        <div class="btn-box">
+          <button type="button" onclick="toggle()">Start</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var step1 = document.getElementById("step1");
+      var step2 = document.getElementById("step2");
+      var step3 = document.getElementById("step3");
+
+      var next1 = document.getElementById("next1");
+      var next2 = document.getElementById("next2");
+
+      next1.onclick = function(){
+        step1.style.visibility = "hidden";
+        step2.style.visibility = "visible";
+        step1.style.left = "-950px";
+        step2.style.left = "40px";
+      }
+
+      next2.onclick = function(){
+        step2.style.visibility = "hidden";
+        step3.style.visibility = "visible";
+        step2.style.left = "-950px";
+        step3.style.left = "40px";
+      }
+
+    </script>
+    <div class="main" id="blur">
+      <div>
+        <textarea readonly id="myTextarea" name="something">Focus Score: 100</textarea>
+      </div>
+
+      <div id="main">
+        <div class="container">
+          <div class="canvas-wrapper" style="width: 640px; height: 480px;">
+            <canvas id="output" width="640" height="480"></canvas>
+            <video id="video" playsinline="" style="
+              -webkit-transform: scaleX(-1);
+              transform: scaleX(-1);
+              visibility: hidden;
+              width: auto;
+              height: auto;
+              " width="640" height="480">
+            </video>
+          </div>
+          <div id="scatter-gl-container"></div>
+        </div>
+      </div>
+      <script src="AI_files/dat.js"></script>
+      <script src="AI_files/demo.js"></script>
+
+      <div class="timer">
+        <h1 id="demo">00:00</h1>
+        <button id="startbutton" onclick="startStop()">start timer</button>
+      </div>
+    </div>
+
+  </div>
+
+    <script type="text/javascript">
+      function toggle(){
+        startStop();
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
